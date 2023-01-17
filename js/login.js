@@ -1,5 +1,4 @@
 const loginform = document.querySelector("#login-form");
-const loginbutton = document.querySelector("#login-form button");
 const logininput = document.querySelector("#login-form input");
 const text = document.querySelector("h1");
 
@@ -18,6 +17,21 @@ if (savedname === null) {
     loginform.addEventListener("submit", submitevent);
 }
 else {
-    text.innerText = `hello ${savedname}`;
-    text.classList.remove("hidden");
+    const hour = new Date().getHours();
+    if (hour < 12 && hour > 6) {
+        text.innerText = `Good morning ${savedname}!`;
+        text.classList.remove("hidden");
+    }
+    else if (hour >= 12 && hour < 18) {
+        text.innerText = `Good afternoon ${savedname}!`;
+        text.classList.remove("hidden");
+    }
+    else if (hour >= 18 && hour < 24) {
+        text.innerText = `Good evening ${savedname}!`;
+        text.classList.remove("hidden");
+    }
+    else {
+        text.innerText = `Good dawn ${savedname}!`;
+        text.classList.remove("hidden");
+    }
 }

@@ -1,0 +1,84 @@
+@import "reset.css";
+
+.hidden {
+    display: none;
+}
+
+body {
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#clock {
+    font-size: 150px;
+    color: white;
+    margin-bottom: 50px;
+}
+
+#weather {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#login-form {
+    outline: none;
+    border: none;
+}
+
+.text-input {
+    width: 440px;
+    background-color: transparent;
+    /* margin-left: 70px; */
+    font-size: 40px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid white;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.text-input::placeholder {
+    color: white;
+}
+
+.hello {
+    font-size: 40px;
+    color: white;
+    margin-bottom: 50px;
+}
+
+#quote {
+    position: absolute;
+    bottom: 30px;
+    font-size: 15px;
+    color: white;
+}
+
+#to-do-list li {
+    margin: 10px 0px;
+    display: flex;
+    align-items: center;
+}
+
+#to-do-list li button {
+    margin-right: 20px;
+    background-color: transparent;
+    border: none;
+}
+
+#to-do-list li span {
+    font-size: 20px;
+    color: white
+}

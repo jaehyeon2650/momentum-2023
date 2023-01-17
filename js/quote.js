@@ -44,4 +44,4 @@ const quote = document.querySelector("#quote");
 const randomnumber = Math.floor(Math.random() * quotes.length)
 const quotetext = quotes[randomnumber].quote;
 const quoteauthor = quotes[randomnumber].author;
-quote.innerText = `${quotetext} ${quoteauthor}`;
+quote.innerText = `${quotetext} // ${quoteauthor}`;
