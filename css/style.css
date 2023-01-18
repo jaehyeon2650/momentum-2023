@@ -24,6 +24,7 @@ body {
     font-size: 150px;
     color: white;
     margin-bottom: 50px;
+    font-family: 'Rowdies', cursive;
 }
 
 #weather {
@@ -66,19 +67,31 @@ body {
     color: white;
 }
 
+#to-do-div {
+    height: 200px;
+    width: 500px;
+    overflow: auto;
+}
+
+#to-do-div::-webkit-scrollbar {
+    display: none;
+}
+
 #to-do-list li {
-    margin: 10px 0px;
+    margin: 10px 10px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 #to-do-list li button {
-    margin-right: 20px;
     background-color: transparent;
     border: none;
+    font-size: 30px;
 }
 
 #to-do-list li span {
-    font-size: 20px;
+    font-weight: 600;
+    font-size: 40px;
     color: white
 }
