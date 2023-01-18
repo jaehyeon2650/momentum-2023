@@ -1,6 +1,8 @@
 const formtodo = document.querySelector("#to-do");
 const forminput = document.querySelector("#to-do input");
 const todolist = document.querySelector("#to-do-list");
+const usernamesaved = localStorage.getItem("username");
+
 let todos = [];
 function savelist(todo) {
     todos.push(todo);
